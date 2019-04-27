@@ -56,7 +56,7 @@ public:
 
 private:
     UPROPERTY(EditInstanceOnly, Category = Configuration)
-	TSoftObjectPtr<APawn> Pawn;
+    TSoftObjectPtr<APawn> Pawn;
 
     UFUNCTION()
     void PawnMoveCompleted(FAIRequestID RequestID, EPathFollowingResult::Type MovementResult){ ValidateMovement(); }
