@@ -1,5 +1,4 @@
 #include "TestPawnMovement.h"
-PRAGMA_DISABLE_OPTIMIZATION
 
 // Configuration
 bool ATestPawnMovement::IsConfigured()
@@ -34,7 +33,6 @@ void ATestPawnMovement::StartTest()
     Super::StartTest();
 
     AAIController* AIController = GetPawnAIController();
-    // XXX: This should be caught by the prepare, necessary?
     if(nullptr == AIController){ return; }
 
     FPathFollowingRequestResult PathRequest = AIController->MoveTo(FAIMoveRequest(TargetPoint));
@@ -61,5 +59,3 @@ AAIController* ATestPawnMovement::GetPawnAIController()
 
     return Pawn->GetController<AAIController>();
 }
-
-PRAGMA_ENABLE_OPTIMIZATION
