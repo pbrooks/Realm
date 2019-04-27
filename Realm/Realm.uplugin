@@ -1,0 +1,29 @@
+{
+    "FileVersion": 3,
+    "Version": 1,
+    "VersionName": "0.1",
+    "FriendlyName": "Realm",
+    "Description": "",
+    "Category": "World",
+    "CreatedBy": "Peter Brooks",
+    "CreatedByURL": "http://pbrooks.net",
+    "DocsURL": "",
+    "MarketPlaceURL": "",
+    "SupportURL": "",
+    "EngineVersion": "4.22.0",
+    "CanContainContent": true,
+    "IsBetaVersion": true,
+    "Installed": true,
+    "Modules": [
+        {
+            "Name": "Realm",
+            "Type": "Runtime",
+            "LoadingPhase": "Default"
+        },
+        {
+            "Name": "RealmPawn",
+            "Type": "Runtime",
+            "LoadingPhase": "Default"
+        }
+    ]
+}
